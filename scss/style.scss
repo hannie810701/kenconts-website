@@ -1,0 +1,410 @@
+/* txt color */
+$gray-500: #4a4a4a;
+$orange-500: #f75c2f;
+$orange-600: #d03a10;
+$blue-600: #006284;
+$white: #fff;
+
+/* position */
+.p-relative {
+  position: relative !important;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+/* global */
+html,
+body {
+  font-family: "微軟正黑體", "Microsoft JhengHei", "PingFangTC", Arial,
+    sans-serif;
+  font-size: 14px;
+  // overflow-x: hidden;
+  @media (min-width: 768px) {
+    font-family: "微軟正黑體", "Microsoft JhengHei", "PingFangTC", Arial,
+      sans-serif;
+    font-size: 16px;
+  }
+}
+
+:target:before {
+  content: "";
+  display: block;
+  height: 80px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.title-section {
+  margin-bottom: 40px;
+  .title-ch {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $gray-500;
+  }
+  .title-en {
+    font-size: 1rem;
+    font-weight: bold;
+    color: $gray-500;
+  }
+
+  &.white-style {
+    margin-top: 40px;
+    .title-ch {
+      color: $white;
+    }
+    .title-en {
+      color: $white;
+    }
+  }
+}
+
+.sub-title {
+  margin-bottom: 40px;
+  h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $orange-600;
+  }
+}
+
+// header
+.header {
+  .navbar-brand {
+    padding: 0;
+    width: 100%;
+    max-width: 387px;
+    display: none;
+
+    img {
+      width: 100%;
+    }
+
+    &.show {
+      display: block;
+      transition-timing-function: linear;
+    }
+  }
+
+  &.header-bg {
+    background-color: $white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition-timing-function: linear;
+  }
+
+  .navbar {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    .nav-item {
+      .nav-link {
+        color: $gray-500;
+        font-weight: 500;
+
+        &:hover {
+          color: #d03a10;
+          font-weight: bold;
+        }
+
+        @media (min-width: 992px) {
+          padding-left: 1.5rem;
+          padding-right: 1.5rem;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+.bg-banner-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 793px;
+  z-index: -99;
+
+  img {
+    width: 100%;
+  }
+
+  @media (min-width: 1441px) {
+    width: 100%;
+    max-width: 850px;
+  }
+}
+
+.bg-banner-right {
+  position: absolute;
+  top: 432px;
+  right: 0;
+  width: 100%;
+  max-width: 320px;
+  z-index: -99;
+
+  img {
+    width: 100%;
+  }
+}
+
+/* banner */
+.banner {
+  padding: 40px 0;
+  height: 600px;
+  position: relative;
+
+  .banner-content {
+    h1 {
+      font-size: 3.75rem;
+      font-weight: bold;
+      color: $white;
+    }
+
+    h2 {
+      font-size: 2.25rem;
+      font-weight: bold;
+      color: $white;
+    }
+
+    h3 {
+      margin-top: 12px;
+      font-size: 1.75rem;
+      font-weight: 500;
+      color: $white;
+    }
+
+    .divider {
+      margin-top: 28px;
+      margin-bottom: 12px;
+      width: 60px;
+      height: 4px;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  .banner-img {
+    width: 100%;
+    max-width: 720px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-10%);
+    -webkit-transform: translateX(-10%);
+    -moz-transform: translateX(-10%);
+    -ms-transform: translateX(-10%);
+    -o-transform: translateX(-10%);
+
+    img {
+      width: 100%;
+    }
+
+    @media (min-width: 1441px) {
+      left: 50%;
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+    }
+  }
+}
+
+/* about our company */
+.about-block {
+  padding: 40px 0px;
+
+  .content-txt {
+    background: url("../image/bg/bg-about-kencont@2x.png") center center
+      no-repeat;
+    background-size: contain;
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+      color: $gray-500;
+    }
+
+    ul {
+      li {
+        padding-left: 4px;
+        font-size: 1rem;
+        font-weight: 500;
+        color: $gray-500;
+        list-style-type: decimal;
+      }
+    }
+  }
+
+  .content-img {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    img {
+      width: 100%;
+    }
+  }
+
+  // @media (min-width: 1441px) {
+  //   padding: 40px 0px;
+  // }
+}
+
+/* service */
+.service-block {
+  padding: 40px 0px;
+
+  .content-txt {
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+      color: $gray-500;
+
+      span {
+        color: $blue-600;
+      }
+    }
+
+    ul {
+      li {
+        padding-left: 4px;
+        font-size: 1rem;
+        font-weight: 500;
+        color: $gray-500;
+        list-style-type: decimal;
+      }
+    }
+  }
+
+  .content-img {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 430px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .row-direct {
+    flex-direction: row-reverse;
+  }
+}
+
+/* recruit */
+.recruit-block {
+  padding: 40px 0px;
+
+  .content-txt {
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+      color: $gray-500;
+    }
+  }
+
+  .content-img {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/* partner */
+.partner-block {
+  padding: 40px 0px;
+
+  .content-img {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 200px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/* contact */
+.contact-block {
+  padding: 40px 0px;
+  background-color: $orange-500;
+  background: url("../image/bg/bg-contact-top@2x.png") top center no-repeat;
+  background-size: cover;
+  position: relative;
+
+  .content-txt {
+    width: 50%;
+
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+      color: $white;
+    }
+
+    .list-title {
+      margin-bottom: 0.75rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: $white;
+    }
+
+    .list-content {
+      margin-bottom: 0.75rem;
+      font-size: 1rem;
+      font-weight: bold;
+      color: $white;
+      a {
+        color: $white;
+
+        :hover {
+          color: $white;
+        }
+      }
+    }
+
+    .slogan-txt {
+      margin-top: 28px;
+      h2 {
+        font-size: 2.25rem;
+        font-weight: bold;
+        color: $white;
+      }
+    }
+  }
+
+  .content-img {
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+    width: 100%;
+    max-width: 440px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/* footer */
+.footer {
+  padding: 12px 0;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: $white;
+  background-color: $orange-500;
+
+  p {
+    margin: 0;
+  }
+}
