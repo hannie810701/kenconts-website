@@ -437,7 +437,7 @@ body {
 
 /* contact */
 .contact-block {
-  padding: 40px 0px 20px 0;
+  padding: 80px 0px 20px 0;
   background-color: #f75c2f;
   background: url("../image/bg/bg-contact-top@2x.png") top center no-repeat;
   background-size: cover;
@@ -502,6 +502,12 @@ body {
 @media (min-width: 480px) {
   .contact-block .content-img {
     display: block;
+  }
+}
+
+@media (min-width: 767px) {
+  .contact-block {
+    padding: 40px 0;
   }
 }
 
