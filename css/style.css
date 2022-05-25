@@ -236,14 +236,14 @@ body {
 
 .about-block .content-txt p {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: bold;
   color: #4a4a4a;
 }
 
 .about-block .content-txt ul li {
   padding-left: 4px;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: bold;
   color: #4a4a4a;
   list-style-type: decimal;
 }
@@ -265,7 +265,7 @@ body {
 
 .service-block .content-txt p {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: bold;
   color: #4a4a4a;
 }
 
@@ -276,7 +276,7 @@ body {
 .service-block .content-txt ul li {
   padding-left: 4px;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: bold;
   color: #4a4a4a;
   list-style-type: decimal;
 }
@@ -305,7 +305,7 @@ body {
 
 .recruit-block .content-txt p {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: bold;
   color: #4a4a4a;
 }
 
@@ -349,14 +349,14 @@ body {
 
 .contact-block .content-txt p {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: bold;
   color: #fff;
 }
 
 .contact-block .content-txt .list-title {
   margin-bottom: 0.75rem;
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: bold;
   color: #fff;
 }
 
@@ -402,7 +402,7 @@ body {
   padding: 12px 0;
   text-align: center;
   font-size: 0.75rem;
-  font-weight: 500;
+  font-weight: bold;
   color: #fff;
   background-color: #f75c2f;
 }
