@@ -19,7 +19,7 @@ html,
 body {
   font-family: "微軟正黑體", "Microsoft JhengHei", "PingFangTC", Arial,
     sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   // overflow-x: hidden;
   @media (min-width: 768px) {
     font-family: "微軟正黑體", "Microsoft JhengHei", "PingFangTC", Arial,
@@ -42,7 +42,7 @@ body {
 .title-section {
   margin-bottom: 40px;
   .title-ch {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: bold;
     color: $gray-500;
   }
@@ -59,6 +59,15 @@ body {
     }
     .title-en {
       color: $white;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .title-ch {
+      font-size: 1.5rem;
+    }
+    .title-en {
+      font-size: 1rem;
     }
   }
 }
@@ -81,13 +90,14 @@ body {
   }
 
   .navbar {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
     .navbar-brand {
       padding: 0;
+      margin-right: 8px;
       width: 100%;
-      max-width: 240px;
+      max-width: 285px;
       display: none;
 
       img {
@@ -109,6 +119,22 @@ body {
           color: #d03a10;
           font-weight: bold;
         }
+      }
+    }
+  }
+
+  @media (min-width: 390px) {
+    .navbar {
+      .navbar-brand {
+        max-width: 300px;
+      }
+    }
+  }
+
+  @media (min-width: 414px) {
+    .navbar {
+      .navbar-brand {
+        max-width: 325px;
       }
     }
   }
@@ -202,13 +228,13 @@ body {
 
   .banner-content {
     h1 {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       font-weight: bold;
       color: $white;
     }
 
     h2 {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       font-weight: bold;
       color: $white;
     }
